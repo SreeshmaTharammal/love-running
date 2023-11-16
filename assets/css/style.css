@@ -190,6 +190,15 @@ main{
     color: #fafafa;
 }
 
+/* Gallery page*/
+#photos img {
+    width: 100%;
+    line-height: 1rem;
+}
+
+#photos {
+    line-height: 0;
+}
 
 /*Footer*/
 #social-networks {
@@ -204,6 +213,14 @@ main{
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* Media query: large or landscape phones (576px and up)*/
+@media screen and (min-width:576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /*Media query: tables and larger(768px and up)*/
@@ -264,6 +281,12 @@ main{
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery page*/
+    #photos {
+        column-count: 3;
+        column-gap: 0;
+    }
 }
 
 /*Media query: tables and larger(992px and up)*/
@@ -303,5 +326,10 @@ main{
         
     }
 
+    /* Gallery page*/
+    #photos {
+        column-count: 4;
+        column-gap: 0;
+    }
     
 }
